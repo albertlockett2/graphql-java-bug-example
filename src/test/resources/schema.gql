@@ -1,0 +1,12 @@
+interface MyInterface {
+  interfaceField: MyNonImplementingType
+}
+type MyNonImplementingType {
+  nonImplementingTypeField: MyImplementingType
+}
+type MyImplementingType implements MyInterface{
+  interfaceField: MyNonImplementingType
+}
+type Query {
+  hello: String
+}
